@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Staatliches&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+span {
+  color: red;
+}
+
+body {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  background-color: black;
+  color: white;
+}
+
+.box1 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  opacity: 30%;
+  width: 300;
+  height: 200px;
+}
+
+header {
+  grid-area: header;
+}
+
+div h1 {
+  font-size: 60px;
+  align-content: center;
+  margin-right: 10rem;
+}
+
+main {
+  grid-area: main;
+  margin-top: 8%;
+}
+
+section {
+  grid-area: seccion;
+}
+
+.boton {
+  grid-area: boton;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-areas:
+    "header header header header "
+    "nav nav  nav nav  "
+    "main main main main"
+    "seccion seccion seccion seccion "
+    "boton boton boton boton "
+    "footer footer footer  footer ";
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50vw;
+  font-size: 18px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.portada {
+  margin-top: 30%;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  width: 100%;
+  box-shadow: 0 0 2px 2px #ff0000;
+  /* position: fixed;
+  z-index: 2;
+  opacity: 60%;*/
+}
+
+.logomain {
+  width: 100px;
+  height: 100px;
+}
+
+.portada {
+  width: 100vw;
+  margin-top: 5%;
+}
+
+.infoportada {
+  font-size: 20px;
+  text-align: center;
+}
+
+.activ {
+  margin: 15px;
+}
+
+.activephoto {
+  width: 20vw;
+  height: 60vh;
+}
+
+.actividades {
+  display: flex;
+  justify-content: center;
+}
+
+.botoninscripcion {
+  width: 30vw;
+  height: 10vh;
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  letter-spacing: 3px;
+  background-color: black;
+  color: white;
+  margin-bottom: 10%;
+}
+
+.button {
+  background-color: rgb(214, 24, 13);
+  font-size: 100px;
+}
+
+.act {
+  display: flex;
+  background-color: white;
+}
+
+.pl1 {
+  grid-area: pl1;
+  margin: 10px;
+  height: 50vh;
+  width: 40vw;
+}
+
+.pl2 {
+  grid-area: pl2;
+  margin: 10px;
+  height: 50vh;
+  width: 40vw;
+}
+
+.pl3 {
+  grid-area: pl3;
+  margin: 10px;
+  width: 40vw;
+}
+
+.border {
+  border: 4px solid black;
+}
+
+.plan {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "pl1 pl1 "
+    "pl2 pl3";
+  color: rgb(243, 237, 237);
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 10%;
+}
+
+.sizeseccion {
+  font-size: 60px;
+}
+
+.seccIonplAn {
+  height: 50vh;
+  width: 30vw;
+  margin: 5px;
+  border: 1px solid red;
+}
+
+.fooTerHome {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height: 30%;
+  margin: 7% 0 7% 0;
+}
+
+.hoMe {
+  height: 40px;
+}
+
+.redesociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.red {
+  width: 40px;
+  height: 40px;
+  margin: 3px;
+}
+
+.grider {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.gridnivel {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  height: 30vh;
+  width: 50vw;
+}
+
+main p {
+  font-size: 20px;
+}
+
+section h2 {
+  font-size: 100px;
+  font-weight: bolder;
+  margin: 6% 0 2% 0;
+  color: rgb(255, 255, 255);
+}
+
+main h2 {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+section h3 {
+  font-size: 110px;
+  margin-top: 5%;
+}
+
+footer h3 {
+  font-size: 20px;
+}
+
+.sizeSeccion {
+  font-size: 30px;
+}
+
+section h4 {
+  font-size: 20px;
+}
+
+.conten {
+  display: grid;
+  height: 40vh;
+  align-items: center;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 40px auto auto auto;
+  gap: 15px;
+  margin-bottom: 70%;
+}
+
+.item1 {
+  background-color: red;
+}
+
+.item2 {
+  background-color: rgb(255, 10, 10);
+}
+
+.item3 {
+  background-color: rgb(255, 0, 0);
+}
+
+.item4 {
+  grid-column: 1/3;
+}
+
+.item6 {
+  grid-column: 1/3;
+}
+
+.item8 {
+  grid-column: 1/3;
+}
+
+.fotoitem {
+  height: 300px;
+  width: 400px;
+}
+
+.fotocafe {
+  margin: 5% 0 5% 0;
+}
+
+.cafe {
+  width: 100%;
+}
+
+form {
+  margin: 5% 0 10% 0;
+}
+@media (max-width: 600px) {
+  .logomain {
+    margin-left: 8%;
+  }
+
+  header h1 {
+    opacity: 0;
+    margin: -7%;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  h2 {
+    font-size: 60px;
+    margin-top: 5%;
+  }
+
+  section h3 {
+    font-size: 40px;
+    margin-top: 5%;
+  }
+
+  .plan {
+    margin-bottom: 30%;
+  }
+
+  .logo {
+    flex-direction: column;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 80vh;
+    margin: 5px;
+    font-size: 50px;
+  }
+
+  .nav1 {
+    height: 10vh;
+    width: 80%;
+  }
+
+  .actividades {
+    flex-direction: column;
+  }
+
+  .activephoto {
+    width: 300px;
+    height: 400px;
+  }
+
+  .conten {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 240%;
+  }
+
+  .item1 {
+    width: 100vw;
+  }
+
+  .item2 {
+    width: 100vw;
+  }
+
+  .item3 {
+    width: 100vw;
+  }
+
+  span {
+    width: 50%;
+  }
+
+  .fooTerHome {
+    margin-top: 40%;
+    margin-bottom: 20%;
+    flex-direction: column;
+  }
+
+  .redesociales {
+    flex-direction: column;
+  }
+
+  .plan {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pl1"
+      "pl2"
+      "pl3";
+  }
+
+  .pl1 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pl2 {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .pl3 {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+}
