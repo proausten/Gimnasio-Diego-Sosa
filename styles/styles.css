@@ -306,6 +306,14 @@ form {
     margin-top: 5%;
   }
 
+  main p {
+    margin: 0 5% 0 5%;
+  }
+
+  div p {
+    margin: 0 4% 0 4%;
+  }
+
   .plan {
     margin-bottom: 30%;
   }
@@ -335,10 +343,6 @@ form {
 
   .item3 {
     width: 100vw;
-  }
-
-  span {
-    width: 50%;
   }
 
   .fooTerHome {
