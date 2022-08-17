@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,26 +12,27 @@
   </head>
   <body>
     <div class="contenedor">
-      <header>
-        <nav class="logo">
-          <img class="logomain" src="../imagenes/logo1gym.png" alt="gim" />
-          <h1>Gym One Rep</h1>
-          <ul class="navbar">
-            <li><a href="../index.html">Home</a>
-            </li>
-            <li><a href="./actividades.html">Actividades</a></li>
-            <li><a href="./clases.html">Clases</a>
-            </li>
-            <li><a href="./planes.html">Planes</a>
-            </li>
-            <li><a href="./zonachill.html">ZonaChill</a>
-            </li>
-            <li><a href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+      <header >
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-3">
+          <div class="container-fluid ">
+            <a class="navbar-brand text-light " href="#"><img class="loGo" src="../imagenes/logo1gym.png" alt="">Gym Company</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav ms-auto ">
+                <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                <a class="nav-link" href="../secciones/actividades.html">Actividades</a>
+                <a class="nav-link" href="../secciones/clases.html">Clases</a>
+                <a class="nav-link" href="../secciones/planes.html">Planes</a>
+                <a class="nav-link" href="../secciones/zonachill.html">ZonaChill</a>
+                <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
         </nav>
       </header>
-     <main class="border">
+     <main>
         <div>
         <h2>Consultas</h2>
         <p><span>Planteanos Tus dudas o Consultas</span></p>
@@ -37,19 +40,34 @@
       <section class="seccion">
         <article>
             <form>
-                 <input type="text" placeholder="Nombre"required><br>
-                 <input type="number" placeholder="Edad" name="edad"required><br>
-                 <input type="email" placeholder="Email"required><br>
-                     <textarea placeholder="Mensaje"></textarea>
-                     <p>Que clase te interesa?</p>
-                     <select name="clase" >
-                         <option value="Boxeo">Boxeo</option>
-                         <option value="Musculacion">Musculacion</option>
-                         <option value="funcional">Funcional</option>
-                     </select>
-                         <div>Queres recibir mas info sobre nosotros?
-                    <input type="checkbox" name="acepta" value="1"></div>
-                    <input type="button" value="enviar">
+              <div class="mb-3 ">
+                <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+                <input type="Name" class="form-control " id="exampleFormControlInput1" placeholder="Nombre">
+              </div>
+             
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+              <div class="mb-3 ">
+                <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <select class="form-select " aria-label="Default select example">
+                <option selected>Que Clase te Interesa?</option>
+                <option value="1">Boxeo</option>
+                <option value="2">Funcional</option>
+                <option value="3">Spinning</option>
+                <div class="form-check ">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Queres Recibir mas info?
+                  </label>
+                </div>
+              </select>   
+              <div class="d-grid gap-2 col-6 mx-auto">
+                <button class="btn btn-primary btn-dark" type="button">Enviar</button>
+              </div>
              </form>
         </article>
     </section>
@@ -73,7 +91,7 @@
           </div>
         </div>
         <section class="redesociales">
-          <h4>Gym One Rep by Desing Ds . Todos los Derechos Reservados</h4>
+          <h4>Gym Company by Desing Ds . Todos los Derechos Reservados</h4>
           <div class="red">
             <a href="https://www.facebook.com/"
               ><img src="../imagenes/faceblanco.svg" alt="facebook"
@@ -86,7 +104,10 @@
           </div>
         </section>
       </footer>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
