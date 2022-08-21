@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +18,10 @@
   <body>
     <div class="contenedor">
       <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-3 fixed-top alto">
           <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#"
-              ><img class="loGo" src="../imagenes/logo1gym.png" alt="" />Gym
+            <a class="navbar-brand text-light C4" href="../index.html"
+              ><img class="loGo" src="../imagenes/logo1gym.png" alt="Gym" />Gym
               Company</a
             >
             <button
@@ -36,20 +38,24 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav ms-auto">
                 <a
-                  class="nav-link active"
+                  class="nav-link active Mp0"
                   aria-current="page"
                   href="../index.html"
                   >Home</a
                 >
-                <a class="nav-link" href="../secciones/actividades.html"
+                <a class="nav-link Mp0" href="../secciones/actividades.html"
                   >Actividades</a
                 >
-                <a class="nav-link" href="../secciones/clases.html">Clases</a>
-                <a class="nav-link" href="../secciones/planes.html">Planes</a>
-                <a class="nav-link" href="../secciones/zonachill.html"
+                <a class="nav-link Mp0" href="../secciones/clases.html"
+                  >Clases</a
+                >
+                <a class="nav-link Mp0" href="../secciones/planes.html"
+                  >Planes</a
+                >
+                <a class="nav-link Mp0" href="../secciones/zonachill.html"
                   >ZonaChill</a
                 >
-                <a class="nav-link" href="../secciones/contacto.html"
+                <a class="nav-link Mp0" href="../secciones/contacto.html"
                   >Contacto</a
                 >
               </div>
@@ -58,9 +64,9 @@
         </nav>
       </header>
       <main>
-        <h2>Clases y Horarios</h2>
+        <h1 data-aos="zoom-in">Clases y Horarios</h1>
         <p>
-          <span
+          <span class="C1"
             >Grilla horaria de todas las clases que podes disfrutar durante todo
             dia.</span
           >
@@ -141,7 +147,7 @@
         <div class="fooTerHome">
           <div class="foTid">
             <img class="foTid" src="../imagenes/icono home.svg" alt="home" />
-            <h3>Donde nos encontras</h3>
+            <h2>Donde nos encontras</h>
             <p>Catamarca 3040</p>
           </div>
           <div class="foTid">
@@ -175,5 +181,8 @@
         crossorigin="anonymous"
       ></script>
     </div>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

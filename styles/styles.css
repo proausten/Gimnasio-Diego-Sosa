@@ -6,7 +6,30 @@
   box-sizing: border-box;
 }
 
-span {
+.C1 {
+  color: rgb(241, 241, 241);
+  background-color: red;
+}
+
+.C2 {
+  font-size: 20px;
+}
+
+.C3 {
+  position: relative;
+  bottom: 200px;
+  font-size: 30px;
+}
+
+.C4 {
+  font-size: 50px;
+}
+
+.suBtituLo {
+  background-color: red;
+}
+
+.Pl1 {
   color: red;
 }
 
@@ -20,10 +43,6 @@ body {
 a {
   color: white;
   text-decoration: none;
-}
-
-h1 {
-  font-size: 100px;
 }
 
 .loGo {
@@ -43,12 +62,6 @@ header {
   grid-area: header;
 }
 
-div h1 {
-  font-size: 60px;
-  align-content: center;
-  margin-right: 10rem;
-}
-
 main {
   grid-area: main;
 }
@@ -65,6 +78,13 @@ footer {
   grid-area: footer;
 }
 
+.aCt {
+  font-size: 100px;
+  font-weight: bolder;
+  margin-top: 3%;
+  color: rgb(255, 255, 255);
+}
+
 .contenedor {
   display: grid;
   grid-template-areas:
@@ -76,21 +96,14 @@ footer {
     "footer footer footer  footer ";
 }
 
-/*
-.logo {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: black;
-  width: 100%;
-  box-shadow: 0 0 2px 2px #ff0000;
-   position: fixed;
-  z-index: 2;
-  opacity: 60%;*/
-
 .portada {
   width: 100vw;
   margin-top: 5%;
+}
+
+.alto {
+  height: 50px;
+  opacity: 60%;
 }
 
 .infoportada {
@@ -103,21 +116,17 @@ footer {
   height: 60vh;
 }
 
-.actividades {
-  display: flex;
-  justify-content: center;
-}
-
-.act {
-  display: flex;
-  background-color: white;
-}
-
 .pl1 {
   grid-area: pl1;
   margin: 10px;
   height: 50vh;
   width: 40vw;
+}
+
+.abs-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pl2 {
@@ -147,11 +156,15 @@ footer {
   color: rgb(243, 237, 237);
   font-size: 20px;
   line-height: 20px;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .sizeseccion {
   font-size: 60px;
+}
+
+.seccion {
+  margin-top: 5%;
 }
 
 .seccIonplAn {
@@ -159,6 +172,10 @@ footer {
   width: 30vw;
   margin: 5px;
   border: 1px solid red;
+}
+
+section div h2 {
+  font-size: 25px;
 }
 
 .fooTerHome {
@@ -199,6 +216,10 @@ footer {
   width: 50vw;
 }
 
+main {
+  margin-top: 4%;
+}
+
 main p {
   font-size: 20px;
 }
@@ -208,6 +229,10 @@ section h2 {
   font-weight: bolder;
   margin: 6% 0 2% 0;
   color: rgb(255, 255, 255);
+}
+
+main h1 {
+  font-size: 100px;
 }
 
 main h2 {
@@ -240,6 +265,27 @@ section h4 {
   grid-template-rows: 40px auto auto auto;
   gap: 15px;
   margin-bottom: 70%;
+}
+
+.conTen {
+  font-size: 20px;
+}
+
+.Mp0 {
+  font-size: 20px;
+}
+
+.Mp {
+  margin: 0 5% 0 6%;
+  font-size: 20px;
+  text-align: left;
+}
+
+.Mp1 {
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: underline;
+  color: red;
 }
 
 .item1 {
