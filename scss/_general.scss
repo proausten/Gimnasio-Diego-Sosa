@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  background-color: $fondo;
+  color: white;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+section {
+  grid-area: seccion;
+}
+
+.boton {
+  grid-area: boton;
+}
+
+footer {
+  grid-area: footer;
+}
+
+main {
+  margin-top: 4%;
+
+  p {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 100px;
+  }
+
+  h2 {
+    font-size: 100px;
+    font-weight: bold;
+  }
+}

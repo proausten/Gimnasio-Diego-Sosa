@@ -1,0 +1,18 @@
+.fooTerHome {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height: 30%;
+  margin: 7% 0 7% 0;
+}
+
+.redesociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .d1 {
+    position: relative;
+    bottom: 5px;
+  }
+}

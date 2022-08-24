@@ -1,0 +1,36 @@
+.plan {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "pl1 pl1 "
+    "pl2 pl3";
+  color: rgb(243, 237, 237);
+  font-size: 20px;
+  line-height: 20px;
+  margin-top: 5%;
+}
+
+.pl1 {
+  grid-area: pl1;
+  margin: 10px;
+  height: 50vh;
+  width: 40vw;
+}
+
+.pl2 {
+  grid-area: pl2;
+  margin: 10px;
+  height: 50vh;
+  width: 40vw;
+}
+
+.pl3 {
+  grid-area: pl3;
+  margin: 10px;
+  width: 40vw;
+}
+
+.Pl1 {
+  color: red;
+}
