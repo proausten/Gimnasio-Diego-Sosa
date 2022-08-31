@@ -3,10 +3,10 @@
 @import "fonts";
 @import "general";
 @import "fotos";
-@import "footer";
 @import "plan";
 @import "actividades";
 @import "consultas";
+@import "footer";
 
 .C1 {
   color: rgb(255, 255, 255);
@@ -97,9 +97,24 @@ section h4 {
 form {
   margin: 5% 0 10% 0;
 }
+
 @media (max-width: 600px) {
+  .tOp {
+    margin-top: 20%;
+    text-align: center;
+  }
+
   .logomain {
     margin-left: 8%;
+  }
+
+  .M1 {
+    margin-top: 16%;
+  }
+
+  .M2 {
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
   }
 
   header h1 {
@@ -137,11 +152,6 @@ form {
     flex-direction: column;
   }
 
-  .activephoto {
-    width: 300px;
-    height: 400px;
-  }
-
   .conten {
     display: flex;
     flex-direction: column;
@@ -163,10 +173,6 @@ form {
   .fooTerHome {
     margin-top: 40%;
     margin-bottom: 20%;
-    flex-direction: column;
-  }
-
-  .redesociales {
     flex-direction: column;
   }
 

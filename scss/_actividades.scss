@@ -35,14 +35,36 @@
 
   .item4 {
     grid-column: 1/3;
+
+    .Mp {
+      text-align: left;
+
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+    }
   }
 
   .item6 {
     grid-column: 1/3;
+
+    .Mp {
+      text-align: left;
+
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+    }
   }
 
   .item8 {
     grid-column: 1/3;
+    .Mp {
+      text-align: left;
+      @media (max-width: 600px) {
+        text-align: center;
+      }
+    }
   }
 }
 
@@ -53,10 +75,34 @@
   color: rgb(255, 255, 255);
 }
 
+/*Mixing*/
+
+@mixin color($color, $letter-spacing) {
+  color: $color;
+  letter-spacing: $letter-spacing;
+}
+
+.mIx {
+  @include color(red, 5px);
+}
+
+/*Extend*/
+.aCt {
+  @extend .aCt;
+  color: red;
+  letter-spacing: 5px;
+}
+
 .C3 {
   position: relative;
   bottom: 200px;
   font-size: 30px;
+
+  @media (max-width: 600px) {
+    display: flex;
+    position: relative;
+    left: 180px;
+  }
 }
 
 a {

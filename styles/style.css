@@ -15,6 +15,12 @@
   height: 50px;
   opacity: 60%;
 }
+@media (max-width: 600px) {
+  .alto {
+    opacity: 100%;
+    height: 13vh;
+  }
+}
 
 * {
   padding: 0;
@@ -26,7 +32,7 @@ body {
   text-align: center;
   font-family: "Bebas Neue", cursive;
   background-color: rgb(0, 0, 0);
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 header {
@@ -80,27 +86,15 @@ main h2 {
   width: 20vw;
   height: 60vh;
 }
+@media (max-width: 600px) {
+  .activephoto {
+    width: 300px;
+    height: 400px;
+  }
+}
 
 .loGo {
   height: 50px;
-}
-
-.fooTerHome {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  height: 30%;
-  margin: 7% 0 7% 0;
-}
-
-.redesociales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.redesociales .d1 {
-  position: relative;
-  bottom: 5px;
 }
 
 .plan {
@@ -171,11 +165,35 @@ main h2 {
 .conten .item4 {
   grid-column: 1/3;
 }
+.conten .item4 .Mp {
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .conten .item4 .Mp {
+    text-align: center;
+  }
+}
 .conten .item6 {
   grid-column: 1/3;
 }
+.conten .item6 .Mp {
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .conten .item6 .Mp {
+    text-align: center;
+  }
+}
 .conten .item8 {
   grid-column: 1/3;
+}
+.conten .item8 .Mp {
+  text-align: left;
+}
+@media (max-width: 600px) {
+  .conten .item8 .Mp {
+    text-align: center;
+  }
 }
 
 .aCt {
@@ -185,10 +203,29 @@ main h2 {
   color: rgb(255, 255, 255);
 }
 
+/*Mixing*/
+.mIx {
+  color: red;
+  letter-spacing: 5px;
+}
+
+/*Extend*/
+.aCt {
+  color: red;
+  letter-spacing: 5px;
+}
+
 .C3 {
   position: relative;
   bottom: 200px;
   font-size: 30px;
+}
+@media (max-width: 600px) {
+  .C3 {
+    display: flex;
+    position: relative;
+    left: 180px;
+  }
 }
 
 a {
@@ -198,6 +235,36 @@ a {
 
 .C2 {
   font-size: 20px;
+}
+
+.fooTerHome {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  height: 30%;
+  margin: 7% 0 7% 0;
+}
+@media (max-width: 600px) {
+  .fooTerHome {
+    display: flex;
+    position: relative;
+  }
+}
+
+.redesociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.redesociales .d1 {
+  position: relative;
+  bottom: 5px;
+}
+@media (max-width: 600px) {
+  .redesociales {
+    position: relative;
+    flex-direction: column;
+  }
 }
 
 .C1 {
@@ -291,8 +358,19 @@ form {
 }
 
 @media (max-width: 600px) {
+  .tOp {
+    margin-top: 20%;
+    text-align: center;
+  }
   .logomain {
     margin-left: 8%;
+  }
+  .M1 {
+    margin-top: 16%;
+  }
+  .M2 {
+    background-color: rgb(0, 0, 0);
+    opacity: 100%;
   }
   header h1 {
     opacity: 0;
@@ -321,10 +399,6 @@ form {
   .actividades {
     flex-direction: column;
   }
-  .activephoto {
-    width: 300px;
-    height: 400px;
-  }
   .conten {
     display: flex;
     flex-direction: column;
@@ -342,9 +416,6 @@ form {
   .fooTerHome {
     margin-top: 40%;
     margin-bottom: 20%;
-    flex-direction: column;
-  }
-  .redesociales {
     flex-direction: column;
   }
   .plan {
