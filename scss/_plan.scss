@@ -8,7 +8,7 @@
   color: rgb(243, 237, 237);
   font-size: 20px;
   line-height: 20px;
-  margin-top: 5%;
+  margin: 0 5% 0 5%;
 }
 
 .pl1 {
@@ -33,4 +33,45 @@
 
 .Pl1 {
   color: red;
+}
+
+.C1 {
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+.sizeseccion {
+  font-size: 60px;
+}
+
+@media (max-width: 600px) {
+  .plan {
+    margin-bottom: 30%;
+  }
+
+  .plan {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "pl1"
+      "pl2"
+      "pl3";
+  }
+
+  .pl1 {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pl2 {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .pl3 {
+    height: 100%;
+    width: 100%;
+    margin-top: 30px;
+  }
 }

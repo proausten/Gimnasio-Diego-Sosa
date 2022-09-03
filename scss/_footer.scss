@@ -1,13 +1,18 @@
-.fooTerHome {
-  display: flex;
-  justify-content: space-around;
-  align-content: center;
-  height: 30%;
-  margin: 7% 0 7% 0;
-
-  @media (max-width: 600px) {
+footer {
+  .fooTerHome {
+    margin-top: 5%;
     display: flex;
-    position: relative;
+    justify-content: space-around;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  @media (max-width: 600px) {
+    .fooTerHome {
+      margin-top: 40%;
+      margin-bottom: 20%;
+      flex-direction: column;
+    }
   }
 }
 
@@ -15,14 +20,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  .d1 {
-    position: relative;
-    bottom: 5px;
+  h4 {
+    font-size: 20px;
   }
+}
 
-  @media (max-width: 600px) {
-    position: relative;
+@media (max-width: 600px) {
+  .redesociales {
+    display: flex;
     flex-direction: column;
   }
+
+  .evEnto {
+    margin-top: 50%;
+  }
+
+  .M1 {
+    margin-top: 25%;
+  }
+}
+
+.grider {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.gridnivel {
+  display: flex;
+  justify-content: center;
+  background-color: red;
+  height: 30vh;
+  width: 50vw;
 }
