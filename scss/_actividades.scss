@@ -1,12 +1,13 @@
-.A0 {
+.section {
   display: flex;
   justify-content: center;
 
-  .A1 {
+  .section__menu {
     margin: 2%;
   }
 
-  .A1 figure {
+  
+   .section__menu figure {
     position: relative;
     height: 400px;
     width: 250px;
@@ -16,13 +17,21 @@
     cursor: pointer;
   }
 
-  .A1 figure img {
+  @media (max-width: 600px){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .section__menu figure img {
     width: 100%;
     height: 100%;
     transition: all 500ms ease-out;
   }
 
-  .capa {
+  .section__menu--foto {
     position: absolute;
     top: 0;
     width: 100%;
@@ -35,19 +44,20 @@
     font-family: "Noto Sans Tamil", sans-serif;
   }
 
-  figure:hover > .capa {
+  figure:hover > .section__menu--foto {
     opacity: 1;
     visibility: visible;
   }
 
-  figure:hover > .capa h1 {
+  figure:hover > .section__menu--foto .section__menu--p {
     margin-top: 70px;
     margin-bottom: 15px;
   }
 
-  figure > .capa h1 {
+  figure > .section__menu--foto  .section__menu--p {
     color: white;
-    font-weight: 400px;
+    font-size: 20px;
+    font-weight: bolder;
     margin-bottom: 120px;
     transition: all 500ms ease-out;
     margin-top: 30px;
@@ -57,8 +67,8 @@
     transform: scale(1.3);
   }
 
-  figure > .capa p {
-    color: white;
+  figure > .section__menu--foto p {
+    color: rgb(255, 254, 254);
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
@@ -69,13 +79,14 @@
   .ulList {
     text-align: left;
     list-style-type: none;
+    font-size: 15px;
   }
 }
 
-.conten {
+
+
+.section__grilla {
   display: grid;
-  height: 200vh;
-  width: 100vw;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40px auto auto auto;
@@ -84,48 +95,103 @@
   font-size: 20px;
 
   @media (max-width: 600px) {
-    height: 10%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
   }
 
-  .Mp {
+  .grilla__subtitle {
+    font-size: 30px;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: rgb(255, 0, 0);
+  }
+
+
+  .grilla__subtitle--p {
     margin: 0 10% 0 6%;
     font-size: 15px;
     text-align: left;
     font-family: "Noto Sans Tamil";
+
+    
   }
 
-  .Mp1 {
-    font-size: 30px;
-    font-weight: bolder;
-    text-decoration: underline;
-    color: red;
-  }
-
-  .item1 {
+ 
+  .grilla__1 {
     background-color: red;
     @media (max-width: 600px) {
       width: 50vw;
     }
   }
 
-  .item2 {
+  .grilla__2 {
     background-color: rgb(255, 10, 10);
     @media (max-width: 600px) {
       width: 50vw;
     }
   }
 
-  .item3 {
+  .grilla__3 {
     background-color: rgb(255, 0, 0);
     @media (max-width: 600px) {
       width: 50vw;
     }
   }
 
-  .item4 {
+  .link{
+    .link__musculacion{
+      color: red;
+    }
+  }
+
+  .section__titulo{
+    color: red;
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+
+  .link__musculacion{
+    display: block;
+    position: relative;
+    bottom: 100px;
+    visibility: hidden;
+  }
+
+  .link__funcional{
+    display: block;
+    position: relative;
+    bottom: 200px;
+    visibility: hidden;
+  }
+
+  .link__box{
+    display: block;
+    position: relative;
+    bottom: 100px;
+    visibility: hidden;
+  }
+
+
+
+  .grilla__4 {
     grid-column: 1/3;
 
-    .Mp {
+    .grilla__subtitle--p {
+      text-align: left;
+
+      @media (max-width: 600px) {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  
+  .grilla__6 {
+    grid-column: 1/3;
+
+    .grilla__subtitle--p{
       text-align: left;
 
       @media (max-width: 600px) {
@@ -134,21 +200,9 @@
     }
   }
 
-  .item6 {
+  .grilla__8 {
     grid-column: 1/3;
-
-    .Mp {
-      text-align: left;
-
-      @media (max-width: 600px) {
-        text-align: center;
-      }
-    }
-  }
-
-  .item8 {
-    grid-column: 1/3;
-    .Mp {
+    .grilla__subtitle--p {
       text-align: left;
       @media (max-width: 600px) {
         text-align: center;
@@ -157,25 +211,29 @@
   }
 }
 
-section h3 {
+
+
+section h2 {
   font-size: 110px;
   margin-top: 5%;
+
+  @media (max-width: 600px){
+    font-size: 60px;
+  }
 }
 
-.red {
-  width: 40px;
-  height: 40px;
-  margin: 3px;
-}
 
-.A0 {
+
+
+
+.menu {
   @media (max-width: 600px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
-    .A1 figure {
+    .menu__flex figure {
       position: relative;
       height: 300px;
       width: 300px;
@@ -183,81 +241,37 @@ section h3 {
   }
 }
 
-.acT2 {
-  margin-top: 30%;
-}
 
-.aCt {
+.h1__titulo {
   font-size: 400%;
   font-weight: bolder;
   margin-top: 5%;
 }
 
-@mixin tiTulo($color, $font-size) {
-  color: $color;
-  font-size: $font-size;
+
+
+@media (max-width: 600px){
+
+.grilla__img{
+  width:50%;
+  height: 60%;
+  border-radius: 3%;
+
 }
 
-.mIx {
-  @include tiTulo(red, 100px);
+
 }
 
-@mixin responsive() {
-  @media screen and (max-width: 600px) {
-    @content;
-  }
-}
+.span__actividades{
+  background-color: red;
 
-.mIx {
-  @include responsive() {
-    margin: 0 5% 0 5%;
-  }
-}
-
-.aCt {
-  @extend .aCt;
-  color: rgb(229, 226, 226);
-  letter-spacing: 10px;
-}
-
-.C3 {
-  position: relative;
-  bottom: 200px;
-  font-size: 30px;
-
-  @media (max-width: 600px) {
-    display: flex;
-    position: relative;
-    left: 180px;
+  @media (max-width: 600px){
+    font-size: 20px;
+    letter-spacing: 3px;
   }
 }
 
-@media (max-width: 600px) {
-  .actividades {
-    flex-direction: column;
-  }
-  .tOp {
-    margin-top: 20%;
-    text-align: center;
-  }
 
-  .conten {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .item1 {
-    width: 100vw;
-  }
-
-  .item2 {
-    width: 100vw;
-  }
-
-  .item3 {
-    width: 100vw;
-  }
-}
 
 a {
   color: rgb(255, 255, 255);

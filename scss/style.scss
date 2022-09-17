@@ -4,31 +4,11 @@
 @import "general";
 @import "fotos";
 @import "plan";
+@import "clases";
 @import "actividades";
 @import "consultas";
-@import "footer";
 @import "formulario";
+@import "cafe";
+@import "footer";
 
-.caFeFit {
-  font-family: "Noto Sans Tamil";
-  font-size: 20px;
-  padding: 0 20% 0 20%;
-  position: absolute;
-  top: 500px;
-  background-color: black;
-  opacity: 80%;
-}
 
-.seccion {
-  padding: 5%;
-}
-
-@media (max-width: 600px) {
-  .caFeFit {
-    font-family: "Noto Sans Tamil";
-    font-size: 15px;
-    background: none;
-    position: absolute;
-    top: auto;
-  }
-}

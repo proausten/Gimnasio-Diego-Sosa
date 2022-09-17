@@ -1,18 +1,20 @@
-.C4 {
+.navbar_titulo {
   font-size: 50px;
 }
 
-.Mp0 {
+.navbar__texto {
   font-size: 20px;
+
 }
 
 .loGo {
   height: 50px;
 }
 
-.alto {
+.navbar__nav {
   height: 50px;
   opacity: 60%;
+
 
   @media (max-width: 600px) {
     opacity: 90%;
@@ -21,7 +23,7 @@
 }
 
 @media (max-width: 600px) {
-  .M2 {
+  .navbar__rsp {
     background-color: rgb(0, 0, 0);
     opacity: 100%;
   }

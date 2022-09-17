@@ -18,99 +18,102 @@
 
 <body>
   <div class="contenedor">
-    <header class="container_fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-6 fixed-top alto">
-        <div class="container-fluid">
-          <a class="navbar-brand text-light C4" href="../index.html"><img class="loGo" src="../imagenes/logo1gym.png"
-              alt="" />Gym
-            Company</a>
+    <header class="container_fluid navbar__texto">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-6 fixed-top navbar__nav ">
+        <div class="container-fluid ">
+          <a class="navbar-brand text-light navbar_titulo " href="./index.html"><img class="loGo"
+              src="../imagenes/logo1gym.png" alt="pesas">Gym Company</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse M2" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto">
-              <a class="nav-link active Mp0" aria-current="page" href="../index.html">Home</a>
-              <a class="nav-link Mp0" href="../secciones/actividades.html">Actividades</a>
-              <a class="nav-link Mp0" href="../secciones/clases.html">Clases</a>
-              <a class="nav-link Mp0" href="../secciones/planes.html">Planes</a>
-              <a class="nav-link Mp0" href="../secciones/zonachill.html">ZonaChill</a>
-              <a class="nav-link Mp0" href="../secciones/contacto.html">Contacto</a>
+          <div class="collapse navbar-collapse navbar__rsp" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto ">
+              <a class="nav-link active " aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link " href="../secciones/actividades.html">Actividades</a>
+              <a class="nav-link " href="../secciones/clases.html">Clases</a>
+              <a class="nav-link " href="../secciones/planes.html">Planes</a>
+              <a class="nav-link " href="../secciones/zonachill.html">ZonaChill</a>
+              <a class="nav-link " href="../secciones/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
       </nav>
     </header>
     <main>
-      <h1 data-aos="zoom-in" class="tOp">Planes</h1>
+      <h1 data-aos="zoom-in">Planes</h1>
       <p>
-        <span class="C1">
+        <span class="span__planes">
           Escoge el plan que mas se adapte a tus exigencias</span>
       </p>
     </main>
     <section>
       <div class="plan">
-        <div class="pl1 border">
-          <h3 class="sizeseccion"><span class="Pl1">Plan Bronze</span></h3>
-          <h4 class="price">$4.500/Mes</h4>
-          <p>
-            Queres despejarte ? Con el Plan Bronze vas a tener ese momento
+        <div class="plan__bronce border">
+          <h2 class="sizeseccion"><span>Plan Bronze</span></h2>
+          <p class="plan__stylefont"> Queres despejarte ? Con el Plan Bronze vas a tener ese momento
             solo para vos, ingresando 3 dias a la semana y con 2 clases a
-            eleccion
+            eleccion</p>
+          <p class="price">
+            $4.500/Mes
           </p>
           <div class="d-grid gap-2 col-4 mx-auto">
-            <button class="btn btn-dark" type="button">Ver Plan</button>
+            <button class="btn btn-dark planButtom" type="button">Ver Plan</button>
           </div>
         </div>
-        <div class="pl2 border">
-          <h3 class="sizeseccion"><span class="Pl1">Plan Silver</span></h3>
-          <h4 class="price">$5.500/Mes</h4>
-          <p>
-            A toda Maquina. Con el plan Silver vas a entrenar tanto como
-            puedas ingresando 4 dias a la semana y con 4 clases a eleccion
+        <div class="plan__silver border">
+          <h3 class="sizeseccion"><span>Plan Silver</span></h3>
+          <p class="plan__stylefont"> A toda Maquina. Con el plan Silver vas a entrenar tanto como
+            puedas ingresando 4 dias a la semana y con 4 clases a eleccion</p>
+          <p class="price">
+            $5.500/Mes
           </p>
           <div class="d-grid gap-2 col-4 mx-auto">
-            <button class="btn btn-dark" type="button">Ver Plan</button>
+            <button class="btn btn-dark planButtom" type="button">Ver Plan</button>
           </div>
         </div>
-        <div class="pl3 border">
-          <h3 class="sizeseccion"><span class="Pl1">Plan Gold</span></h3>
-          <h4 class="price">$6.500 /Mes</h4>
-          <p>
-            Si querias entrenar sin parar aca lo tenes, ingresando 6 dias a la
-            semana con 6 clases a eleccion
+        <div class="plan__gold border">
+          <h4 class="sizeseccion"><span>Plan Gold</span></h4>
+          <p class="plan__stylefont"> Si querias entrenar sin parar aca lo tenes, ingresando 6 dias a la
+            semana con 6 clases a eleccion</p>
+          <p class="price">
+            $6.500 /Mes
           </p>
           <div class="d-grid gap-2 col-4 mx-auto">
-            <button class="btn btn-dark" type="button">Ver Plan</button>
+            <button class="btn btn-dark planButtom" type="button">Ver Plan</button>
           </div>
         </div>
       </div>
     </section>
     <footer>
-      <div class="fooTerHome">
-        <div class="foTid">
-          <img class="foTid" src="../imagenes/icono home.svg" alt="home" />
-          <h3>Donde nos encontras</h3>
+      <div class="footer">
+        <div>
+          <img src="../imagenes/icono home.svg" alt="home" />
+          <p>Donde nos encontras</p>
           <p>Catamarca 3040</p>
         </div>
-        <div class="foTid">
+        <div>
           <img src="../imagenes/icono whatsss.svg" alt="whatsapp" />
-          <h3>Mandanos un Whatsapp o llamanos</h3>
+          <p>Mandanos un Whatsapp o llamanos</p>
           <p>2235654789</p>
         </div>
-        <div class="foTid">
+        <div>
           <img src="../imagenes/icono hora.png" alt="time" />
-          <h3>Horario de apertura</h3>
+          <p>Horario de apertura</p>
           <p>6:00am a 22:00pm</p>
         </div>
       </div>
-      <section class="redesociales">
-        <h4>Gym Company by Desing Ds . Todos los Derechos Reservados</h4>
-        <div class="red">
-          <a href="https://www.facebook.com/"><img src="../imagenes/faceblanco.svg" alt="facebook" /></a>
-        </div>
-        <div class="red">
-          <a href="https://www.instagram.com"><img src="../imagenes/instagramblanco.svg" alt="instagram" /></a>
+      <section>
+        <p>Gym Company by Desing Ds . Todos los Derechos Reservados</p>
+        <div class="footer__redsocial">
+          <div class="footer__icon">
+            <a href="https://www.facebook.com/"><img class="footer__icon--fb" src="../imagenes/faceblanco.svg"
+                alt="facebook" /></a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://www.instagram.com"><img class="footer__icon--wat" src="../imagenes/instagramblanco.svg"
+                alt="instagram" /></a>
+          </div>
         </div>
       </section>
     </footer>

@@ -1,0 +1,57 @@
+
+.img__text {
+  font-family: "Noto Sans Tamil";
+  font-size: 20px;
+  padding: 0 20% 0 20%;
+  position: absolute;
+  top: 500px;
+  background-color: black;
+  opacity: 80%;
+}
+
+
+
+@media (max-width: 600px) {
+  .img__text {
+    font-family: "bebas neue";
+    font-size: 15px;
+    background: none;
+    position: absolute;
+    top: 65%;
+  }
+
+  .img__text--evento{
+
+    font-family: "bebas neue";
+    font-size: 10px;
+    color: red;
+    background: none;
+    position: absolute;
+ 
+    top: 83%;
+    left: 29%;
+    
+}
+}
+
+.span__cafe{
+    background-color: red;
+
+    @media (max-width: 600px){
+        font-size: 20px;
+        letter-spacing: 3px;
+      }
+    
+}
+
+
+
+.img__margin {
+    margin: 5% 0 5% 0;
+  }
+  
+  .img__cafe {
+    width: 90%;
+  }
+
+ 

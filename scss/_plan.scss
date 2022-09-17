@@ -1,44 +1,61 @@
+.price{
+  font-size: 40px;
+  font-style: italic;
+  
+}
+
+.span__planes{
+  background-color: red;
+
+  @media (max-width: 600px){
+  font-size: 20px;
+  letter-spacing: 3px;
+
+  }
+}
+
+.plan__stylefont{
+  font-family: "Noto Sans Tamil", sans-serif;
+  font-size: 16px;
+  margin: 0 5% 5% 5%;
+  
+}
+
+
 .plan {
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-    "pl1 pl1 "
-    "pl2 pl3";
+    "plan__bronce plan__bronce "
+    "plan__silver plan__gold";
   color: rgb(243, 237, 237);
   font-size: 20px;
   line-height: 20px;
   margin: 0 5% 0 5%;
 }
 
-.pl1 {
-  grid-area: pl1;
+.plan__bronce {
+  grid-area: plan__bronce;
   margin: 10px;
   height: 50vh;
   width: 40vw;
 }
 
-.pl2 {
-  grid-area: pl2;
+.plan__silver {
+  grid-area: plan__silver;
   margin: 10px;
   height: 50vh;
   width: 40vw;
 }
 
-.pl3 {
-  grid-area: pl3;
+.plan__gold {
+  grid-area: plan__gold;
   margin: 10px;
   width: 40vw;
 }
 
-.Pl1 {
-  color: red;
-}
 
-.C1 {
-  color: rgb(255, 255, 255);
-  background-color: red;
-}
 .sizeseccion {
   font-size: 60px;
 }
@@ -52,24 +69,42 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas:
-      "pl1"
-      "pl2"
-      "pl3";
+      "plan__bronce"
+      "plan__silver"
+      "plan__gold";
+
+      
+  }
+  @media (max-width: 600px) {
+  
+
+    .plan {
+      display: flex;
+      flex-direction: column;
+
+    }
   }
 
-  .pl1 {
+  .planButtom{
+
+    margin: 10%;
+
+  }
+  
+
+  .plan__bronce {
     height: 100%;
     width: 100%;
     margin-bottom: 20px;
   }
 
-  .pl2 {
+  .plan__silver {
     height: 100%;
     width: 100%;
     margin-top: 30px;
   }
 
-  .pl3 {
+  .plan__gold {
     height: 100%;
     width: 100%;
     margin-top: 30px;

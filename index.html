@@ -18,24 +18,24 @@
 </head>
 
 <body>
-  <div class="container_fluid M1">
+  <div class="container_fluid navbar__texto">
     <header class="container_fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-6 fixed-top alto ">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-6 fixed-top navbar__nav ">
         <div class="container-fluid ">
-          <a class="navbar-brand text-light C4 " href="./index.html"><img class="loGo" src="./imagenes/logo1gym.png"
-              alt="">Gym Company</a>
+          <a class="navbar-brand text-light navbar_titulo " href="./index.html"><img class="loGo"
+              src="./imagenes/logo1gym.png" alt="pesas">Gym Company</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse M2" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse navbar__rsp" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto ">
-              <a class="nav-link active Mp0" aria-current="page" href="./index.html">Home</a>
-              <a class="nav-link Mp0" href="./secciones/actividades.html">Actividades</a>
-              <a class="nav-link Mp0" href="./secciones/clases.html">Clases</a>
-              <a class="nav-link Mp0" href="./secciones/planes.html">Planes</a>
-              <a class="nav-link Mp0" href="./secciones/zonachill.html">ZonaChill</a>
-              <a class="nav-link Mp0" href="./secciones/contacto.html">Contacto</a>
+              <a class="nav-link active " aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link " href="./secciones/actividades.html">Actividades</a>
+              <a class="nav-link " href="./secciones/clases.html">Clases</a>
+              <a class="nav-link " href="./secciones/planes.html">Planes</a>
+              <a class="nav-link " href="./secciones/zonachill.html">ZonaChill</a>
+              <a class="nav-link " href="./secciones/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
@@ -45,13 +45,19 @@
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="./imagenes/foto carrusel1.jpg" class="d-block w-100" alt="funcional">
+            <img
+              src="https://res.cloudinary.com/proausten28/image/upload/v1663121757/gymCompany/imagenes/foto_carrusel1_klufoi.jpg"
+              class="d-block w-100" alt="funcional">
           </div>
           <div class="carousel-item">
-            <img src="./imagenes/fotocarrusel2.jpg" class="d-block w-100" alt="gimnasio">
+            <img
+              src="https://res.cloudinary.com/proausten28/image/upload/v1663121755/gymCompany/imagenes/fotocarrusel2_vf6kco.jpg"
+              class="d-block w-100" alt="gimnasio">
           </div>
           <div class="carousel-item">
-            <img src="./imagenes/fotocarrusel3.jpg" class="d-block w-100" alt="pesas">
+            <img
+              src="https://res.cloudinary.com/proausten28/image/upload/v1663121763/gymCompany/imagenes/fotocarrusel3_jkxhbx.jpg"
+              class="d-block w-100" alt="pesas">
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
             data-bs-slide="prev">
@@ -67,94 +73,105 @@
       </div>
     </main>
     <div>
-      <h1 class="aCt" data-aos="fade-up" data-aos-duration="3000">Actividades</h1>
+      <h1 class="h1__titulo" data-aos="fade-up" data-aos-duration="3000">Actividades</h1>
     </div>
-    <section class="A0">
-      <div class="A1">
+    <section class="section" data-aos="zoom-in">
+      <div class="section__menu">
         <figure>
-          <img class="acTivePhoto" src="./imagenes/musculacion.jpg" alt="fuerza">
-          <div class="capa">
-            <h1>Musculacion</h1>
+          <img
+            src="https://res.cloudinary.com/proausten28/image/upload/v1663121759/gymCompany/imagenes/musculacion_cnhcj9.jpg"
+            alt="
+            fuerza">
+          <div class="section__menu--foto">
+            <p class="section__menu--p">Musculacion</p>
             <ul class="ulList">
               <li>Entrenadores Semi Personalizados</li>
               <li>Ingreso a Cualquier Horario</li>
               <li>Clases Grupales</li>
               <li>Rutinas Semanales</li>
             </ul>
-            <div class="T1">
+            <div>
               <button type="button" class="btn btn-warning ">Inscribite</button>
             </div>
           </div>
         </figure>
       </div>
-      <div class="A1">
+      <div class="section__menu">
         <figure>
-          <img class="acTivePhoto" src="./imagenes/funcional.jpg" alt="">
-          <div class="capa">
-            <h1>Funcional</h1>
-            <p>Un Espacio Unico en Mar del Plata creado para los atletas Apasionados de esta Actividad Funcional.</p>
-            <div class="T1">
+          <img
+            src="https://res.cloudinary.com/proausten28/image/upload/v1663121755/gymCompany/imagenes/funcional_jykkiz.jpg"
+            alt="crossfit">
+          <div class="section__menu--foto">
+            <p class="section__menu--p">Funcional</p>
+            <p>Un Espacio Unico en Mar del Plata creado para los atletas Apasionados de esta
+              Actividad Funcional.</p>
+            <div>
               <button type="button" class="btn btn-warning ">Inscribite</button>
             </div>
         </figure>
       </div>
-      <div class="A1">
+      <div class="section__menu">
         <figure>
-          <img class="acTivePhoto" src="./imagenes/boxeo.jpg" alt="">
-          <div class="capa">
-            <h1>Boxeo</h1>
-            <p>Veni y Boxea como un Profesional, clases dinamicas y con Profesores profesionales en la Materia,
+          <img
+            src="https://res.cloudinary.com/proausten28/image/upload/v1663121759/gymCompany/imagenes/boxeo_xugd4o.jpg"
+            alt="boxing">
+          <div class="section__menu--foto">
+            <p class="section__menu--p">Boxeo</p>
+            <p>Veni y Boxea como un Profesional, clases dinamicas y con Profesores profesionales en
+              la Materia,
               aprenderas todo lo necesario para llevar tu boxeo a otro nivel.</p>
-            <div class="T1">
-              <button type="button" class="btn btn-warning ">Inscribite</button>
+            <div <button type="button" class="btn btn-warning ">Inscribite</button>
             </div>
           </div>
         </figure>
     </section>
   </div>
   </section>
-  <section class="boton">
-    <h2 class="mIx">No digas mas Mañana</h1>
-      </div>
-    </h2>
+  <section>
+    <h2 class="boton">No digas mas Mañana</h2>
     <div class="d-grid gap-2 col-4 mx-auto">
       <button class="btn btn-dark " type="button">Registrate</button>
     </div>
-    <footer>
-      <div class="fooTerHome">
-        <div class="foTid">
-          <img class="foTid" src="./imagenes/icono home.svg" alt="home" />
-          <h3>Donde nos encontras</h3>
-          <p>Catamarca 3040</p>
+  </section>
+  <footer>
+    <div class="footer">
+      <div>
+        <img src="./imagenes/icono home.svg" alt="home" />
+        <p>Donde nos encontras</p>
+        <p>Catamarca 3040</p>
+      </div>
+      <div>
+        <img src="./imagenes/icono whatsss.svg" alt="whatsapp" />
+        <p>Mandanos un Whatsapp o llamanos</p>
+        <p>2235654789</p>
+      </div>
+      <div>
+        <img src="./imagenes/icono hora.png" alt="time" />
+        <p>Horario de apertura</p>
+        <p>6:00am a 22:00pm</p>
+      </div>
+    </div>
+    <section>
+      <p>Gym Company by Desing Ds . Todos los Derechos Reservados</p>
+      <div class="footer__redsocial">
+        <div class="footer__icon">
+          <a href="https://www.facebook.com/"><img class="footer__icon--fb" src="./imagenes/faceblanco.svg"
+              alt="facebook" /></a>
         </div>
-        <div class="foTid">
-          <img src="./imagenes/icono whatsss.svg" alt="whatsapp" />
-          <h3>Mandanos un Whatsapp o llamanos</h3>
-          <p>2235654789</p>
-        </div>
-        <div class="foTid">
-          <img src="./imagenes/icono home.svg" alt="time" />
-          <h3>Horario de apertura</h3>
-          <p>6:00am a 22:00pm</p>
+        <div class="footer__icon">
+          <a href="https://www.instagram.com"><img class="footer__icon--wat" src="./imagenes/instagramblanco.svg"
+              alt="instagram" /></a>
         </div>
       </div>
-      <section class="redesociales">
-        <h4>Gym Company by Desing Ds . Todos los Derechos Reservados</h4>
-        <div class="red">
-          <a href="https://www.facebook.com/"><img src="./imagenes/faceblanco.svg" alt="facebook" /></a>
-        </div>
-        <div class="red">
-          <a href="https://www.instagram.com"><img src="./imagenes/instagramblanco.svg" alt="instagram" /></a>
-        </div>
-      </section>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
-    </div>
-    <script>
-      AOS.init();
-    </script>
+    </section>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  </div>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>

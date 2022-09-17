@@ -17,23 +17,23 @@
 
 <body>
   <div class="contenedor">
-    <header class="container_fluid">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-6 fixed-top alto ">
+    <header class="container_fluid navbar__texto">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black ms-6 fixed-top navbar__nav ">
         <div class="container-fluid ">
-          <a class="navbar-brand text-light C4 " href="../index.html"><img class="loGo" src="../imagenes/logo1gym.png"
-              alt="">Gym Company</a>
+          <a class="navbar-brand text-light navbar_titulo " href="./index.html"><img class="loGo"
+              src="../imagenes/logo1gym.png" alt="pesas">Gym Company</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse M2" id="navbarNavAltMarkup">
+          <div class="collapse navbar-collapse navbar__rsp" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto ">
-              <a class="nav-link active Mp0" aria-current="page" href="../index.html">Home</a>
-              <a class="nav-link Mp0" href="../secciones/actividades.html">Actividades</a>
-              <a class="nav-link Mp0" href="../secciones/clases.html">Clases</a>
-              <a class="nav-link Mp0" href="../secciones/planes.html">Planes</a>
-              <a class="nav-link Mp0" href="../secciones/zonachill.html">ZonaChill</a>
-              <a class="nav-link Mp0" href="../secciones/contacto.html">Contacto</a>
+              <a class="nav-link active " aria-current="page" href="../index.html">Home</a>
+              <a class="nav-link " href="../secciones/actividades.html">Actividades</a>
+              <a class="nav-link " href="../secciones/clases.html">Clases</a>
+              <a class="nav-link " href="../secciones/planes.html">Planes</a>
+              <a class="nav-link " href="../secciones/zonachill.html">ZonaChill</a>
+              <a class="nav-link " href="../secciones/contacto.html">Contacto</a>
             </div>
           </div>
         </div>
@@ -41,10 +41,10 @@
     </header>
     <main>
       <div>
-        <h1 data-aos="zoom-in" class="tOp">Consultas</h1>
-        <h2 class="C2"><span class="C1">Planteanos Tus dudas o Alguna consulta que tengas</span></>
+        <h1 data-aos="zoom-in">Consultas</h1>
+        <p><span class="span__subtitulo">Planteanos Tus dudas o Alguna consulta que tengas</span></p>
     </main>
-    <section class="seccion">
+    <section class="pading_contacto">
       <article>
         <form>
           <div class="mb-3 ">
@@ -67,43 +67,47 @@
             <option value="3">Spinning</option>
             <div class="form-check ">
               <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-              <label class="form-check-label" for="defaultCheck1">
+              <label class="form-check-label " for="defaultCheck1 ">
                 Queres Recibir mas info?
               </label>
             </div>
           </select>
           <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary btn-dark" type="button">Enviar</button>
+            <button class="btn btn-primary btn-danger" type="button">Enviar</button>
           </div>
         </form>
       </article>
     </section>
     </section>
     <footer>
-      <div class="fooTerHome">
-        <div class="foTid">
-          <img class="foTid" src="../imagenes/icono home.svg" alt="home" />
-          <h3>Donde nos encontras</h3>
+      <div class="footer">
+        <div>
+          <img src="../imagenes/icono home.svg" alt="home" />
+          <p>Donde nos encontras</p>
           <p>Catamarca 3040</p>
         </div>
-        <div class="foTid">
+        <div>
           <img src="../imagenes/icono whatsss.svg" alt="whatsapp" />
-          <h3>Mandanos un Whatsapp o llamanos</h3>
+          <p>Mandanos un Whatsapp o llamanos</p>
           <p>2235654789</p>
         </div>
-        <div class="foTid">
-          <img src="../imagenes/icono hora.png " alt="time" />
-          <h3>Horario de apertura</h3>
+        <div>
+          <img src="../imagenes/icono hora.png" alt="time" />
+          <p>Horario de apertura</p>
           <p>6:00am a 22:00pm</p>
         </div>
       </div>
-      <section class="redesociales">
-        <h4>Gym Company by Desing Ds . Todos los Derechos Reservados</h4>
-        <div class="red">
-          <a href="https://www.facebook.com/"><img src="../imagenes/faceblanco.svg" alt="facebook" /></a>
-        </div>
-        <div class="red">
-          <a href="https://www.instagram.com"><img src="../imagenes/instagramblanco.svg" alt="instagram" /></a>
+      <section>
+        <p>Gym Company by Desing Ds . Todos los Derechos Reservados</p>
+        <div class="footer__redsocial">
+          <div class="footer__icon">
+            <a href="https://www.facebook.com/"><img class="footer__icon--fb" src="../imagenes/faceblanco.svg"
+                alt="facebook" /></a>
+          </div>
+          <div class="footer__icon">
+            <a href="https://www.instagram.com"><img class="footer__icon--wat" src="../imagenes/instagramblanco.svg"
+                alt="instagram" /></a>
+          </div>
         </div>
       </section>
     </footer>
