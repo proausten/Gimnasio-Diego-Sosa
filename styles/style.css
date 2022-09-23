@@ -470,10 +470,6 @@ a {
 }
 
 form {
-  margin: 5% 0 10% 0;
-}
-
-.pading_contacto {
   padding: 5%;
 }
 
@@ -491,28 +487,17 @@ form {
   font-family: "Noto Sans Tamil";
   font-size: 20px;
   padding: 0 20% 0 20%;
-  position: absolute;
-  top: 500px;
-  background-color: black;
-  opacity: 80%;
 }
 
 @media (max-width: 600px) {
   .img__text {
     font-family: "bebas neue";
-    font-size: 15px;
-    background: none;
-    position: absolute;
-    top: 65%;
+    font-size: 12px;
   }
   .img__text--evento {
     font-family: "bebas neue";
     font-size: 10px;
     color: red;
-    background: none;
-    position: absolute;
-    top: 83%;
-    left: 29%;
   }
 }
 .span__cafe {
@@ -578,6 +563,6 @@ form {
     font-size: 15px;
   }
   .footer__grilla {
-    margin-top: 40%;
+    margin-top: 20%;
   }
 }/*# sourceMappingURL=style.css.map */
